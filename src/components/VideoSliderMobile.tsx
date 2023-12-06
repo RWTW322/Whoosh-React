@@ -1,5 +1,5 @@
 import React, { EventHandler, useState } from "react";
-import { PlayBtnIcon } from "./MainContent";
+import { PlayBtnIcon } from "./icons/PlayBtnIcon";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules'
 import 'swiper/css';
