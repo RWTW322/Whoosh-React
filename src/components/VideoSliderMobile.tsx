@@ -11,7 +11,7 @@ export function VideoSliderMobile() {
         <div className="main-content__video-mobile">
             <h4 className="mobile-video__title">How it works</h4>
 
-            <Swiper pagination={{clickable: true}} modules={[Pagination]} className="video-swiper">
+            <Swiper pagination={{clickable: true}} modules={[Pagination]} spaceBetween={16} className="video-swiper">
                 <SwiperSlide>
                     <div className="mobile-video-container">
                         <button className="video__play-btn button" type="button"><PlayBtnIcon /></button>

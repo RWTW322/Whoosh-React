@@ -38,10 +38,6 @@ h4 {
   line-height: 32px;
 }
 
-h5 {
-  font-size: 14px;
-}
-
 .title {
   font-family: "Intro Bold";
   font-size: 40px;
@@ -112,10 +108,6 @@ h5 {
   font-family: "Intro Book";
   font-size: 16px;
   line-height: 24px;
-}
-
-.header__nav {
-  display: flex;
 }
 
 .header__search-container {
@@ -195,18 +187,23 @@ h5 {
   align-items: center;
 }
 
-.nav-link {
+.nav__link {
   text-decoration: none;
   color: #666;
   font-family: "Intro Book";
   font-size: 16px;
 }
 
-.nav-link:first-child {
+.nav__link-affiliate-program,
+.nav__link-support {
+  display: none;
+}
+
+.nav__link:first-child {
   margin-right: 36px;
 }
 
-.login-btn {
+.nav__login-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -219,133 +216,8 @@ h5 {
   background-color: #2B6BF3;
 }
 
-.login-btn:hover {
+.nav__login-btn:hover {
   opacity: 0.7;
-}
-
-/* Styles for header side-out menu*/
-
-.header__menu {
-  position: fixed;
-  top: 0;
-  right: 0;
-  z-index: 500;
-  width: 274px;
-  height: 640px;
-  background-color: #fff;
-  filter: drop-shadow(0px 16px 16px rgba(73, 99, 176, 0.16));
-  padding: 20px 16px 32px 16px;
-}
-
-.menu__city-container {
-  margin-bottom: 40px;
-}
-
-.menu__city {
-  color: #666;
-  font-family: "Intro Book";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  border-bottom: 1px dashed #C2D2F4;
-}
-
-.menu__search-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 34px;
-  width: 242px;
-  height: 40px;
-  border: 1px solid #C2D2F4;
-  padding: 8px 8px 8px 16px;
-  border-radius: 4px;
-  border: 1px solid #C2D2F4;
-  background-color: #FFF;
-  margin-bottom: 44px;
-}
-
-.menu__search-input {
-  width: 140px;
-  height: 15px;
-  border: none;
-  color: #1D253C;
-  font-family: "Intro Book";
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  opacity: 0.56;
-}
-
-.menu__search-container:hover {
-  background: #F1F5FF;
-  border: 1px solid #C2D2F4;
-}
-
-.menu__search-container:hover>.menu__search-input {
-  background: #F1F5FF;
-}
-
-.menu__search-container:active>.menu__search-input {
-  border: 1px solid #2B6BF3;
-  background: #FFF;
-  opacity: 1;
-}
-
-.menu__search-container:active>.search-icon {
-  opacity: 1;
-}
-
-.menu__search-container:active {
-  border: 1px solid #2B6BF3;
-  background: #FFF;
-  opacity: 1;
-}
-
-.menu__search-input:active {
-  border: 1px solid #2B6BF3;
-  background: #FFF;
-  opacity: 1;
-}
-
-.menu__nav {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 220px;
-}
-
-.menu__link {
-  height: 24px;
-}
-
-.menu__link:not(:last-child) {
-  margin-bottom: 24px;
-}
-
-.menu__link {
-  text-decoration: none;
-  color: #666;
-  font-family: "Intro Book";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-}
-
-.complex-order-btn {
-  color: #FFF;
-  text-align: center;
-  font-family: "Intro Regular";
-  font-size: 18px;
-  line-height: 32px;
-}
-
-.menu__menu-close-btn {
-  position: absolute;
-  top: 20px;
-  right: 12px;
 }
 
 /*Styles for MainContent component */
@@ -1220,7 +1092,6 @@ h5 {
   list-style-type: none;
 }
 
-
 .nav__list-item>a {
   text-decoration: none;
   color: #1D253C;
@@ -1380,6 +1251,10 @@ h5 {
     justify-content: space-between;
   }
 
+  .header__nav {
+    display: none;
+  }
+
   .header__account-btn {
     display: block;
   }
@@ -1389,8 +1264,7 @@ h5 {
   }
 
   .header__city-container,
-  .header__search-container,
-  .header__nav {
+  .header__search-container{
     display: none;
   }
 
@@ -1399,6 +1273,145 @@ h5 {
     height: 40px;
   }
 
+  /*SideOut menu */
+
+  .header__menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 500;
+    width: 274px;
+    height: 640px;
+    background-color: #fff;
+    filter: drop-shadow(0px 16px 16px rgba(73, 99, 176, 0.16));
+    padding: 20px 16px 32px 16px;
+  }
+  
+  .menu__city-container {
+    margin-bottom: 40px;
+  }
+  
+  .menu__city {
+    color: #666;
+    font-family: "Intro Book";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    border-bottom: 1px dashed #C2D2F4;
+  }
+  
+  .menu__search-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 34px;
+    width: 242px;
+    height: 40px;
+    border: 1px solid #C2D2F4;
+    padding: 8px 8px 8px 16px;
+    border-radius: 4px;
+    border: 1px solid #C2D2F4;
+    background-color: #FFF;
+    margin-bottom: 44px;
+  }
+  
+  .menu__search-input {
+    width: 140px;
+    height: 15px;
+    border: none;
+    color: #1D253C;
+    font-family: "Intro Book";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    opacity: 0.56;
+  }
+  
+  .menu__search-container:hover {
+    background: #F1F5FF;
+    border: 1px solid #C2D2F4;
+  }
+  
+  .menu__search-container:hover>.menu__search-input {
+    background: #F1F5FF;
+  }
+  
+  .menu__search-container:active>.menu__search-input {
+    border: 1px solid #2B6BF3;
+    background: #FFF;
+    opacity: 1;
+  }
+  
+  .menu__search-container:active>.search-icon {
+    opacity: 1;
+  }
+  
+  .menu__search-container:active {
+    border: 1px solid #2B6BF3;
+    background: #FFF;
+    opacity: 1;
+  }
+  
+  .menu__search-input:active {
+    border: 1px solid #2B6BF3;
+    background: #FFF;
+    opacity: 1;
+  }
+  
+  .side-out-menu__nav {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 220px;
+    width: 100%;
+  }
+  
+  .nav__link {
+    height: 24px;
+  }
+  
+  .nav__link:not(:last-child) {
+    margin-bottom: 24px;
+  }
+  
+  .nav__link {
+    text-decoration: none;
+    color: #666;
+    font-family: "Intro Book";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  
+  .complex-order-btn {
+    color: #FFF;
+    text-align: center;
+    font-family: "Intro Regular";
+    font-size: 18px;
+    line-height: 32px;
+  }
+  
+  .menu__menu-close-btn {
+    position: absolute;
+    top: 20px;
+    right: 12px;
+  }
+
+  .nav__login-btn {
+    display: none;
+  }
+
+  .nav__link-support,
+  .nav__link-affiliate-program {
+    display: block;
+  }
+
+  .nav__link:first-child {
+    margin-right: 0;
+  }
   /* MainContent*/
 
   .main-content {
@@ -1740,8 +1753,6 @@ h5 {
     padding-right: 0px !important;
   }
 
-
-
   /* ExpressDelivery */
 
   .express-delivery {
@@ -1846,7 +1857,6 @@ h5 {
 
   .footer-bottom {
     width: 328px;
-    /* justify-items: center; */
     flex-direction: column;
     align-items: center;
   }
