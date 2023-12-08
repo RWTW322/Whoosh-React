@@ -1,10 +1,11 @@
+import { SearchFormProps } from "@/utils/interfaces";
 
-export function SearchForm({icon}:any) {
+export function SearchForm({icon, className}:SearchFormProps) {
 
     return (
-        <form className="header__search-container">
-            <input className="header__search-input" type="text" placeholder="Track a Package" />
-            <button className="header__search-btn" type="submit">{icon}</button>
+        <form className={className}>
+            <input className="search-form__input" type="text" placeholder="Track a Package" />
+            <button className="search-form__btn button" type="submit">{icon}</button>
         </form>
     )
 }

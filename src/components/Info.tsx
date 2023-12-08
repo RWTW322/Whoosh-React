@@ -1,8 +1,7 @@
-import React from "react";
+import { AffiliateIcon } from "./icons/AffiliateIcon";
 import { CourierIcon } from "./icons/CourierIcon";
 import { RouteIcon } from "./icons/RouteIcon";
 import { SupportIcon } from "./icons/SupportIcon";
-import { AffiliateIcon } from "./icons/AffiliateIcon";
 
 export function Info() {
 

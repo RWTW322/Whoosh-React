@@ -1,21 +1,21 @@
 import React, { useState } from "react";
+import 'swiper/css';
+import 'swiper/css/pagination';
 import { Button } from "./Button";
 import { City } from "./City";
 import { Graphic } from "./Graphic";
-import { ArrowIcon } from "./icons/ArrowIcon";
-import { InfoIcon } from "./icons/InfoIcon";
-import { ClearIcon } from "./icons/ClearIcon";
-import { TruckIcon } from "./icons/TruckIcon";
-import { FootIcon } from "./icons/FootIcon";
-import { DropIcon } from "./icons/DropIcon";
-import { DottedLine } from "./icons/DottedLine";
-import { SearchTrackIcon } from "./icons/SearchTrackIcon";
 import { VideoSliderMobile } from "./VideoSliderMobile";
-import { PlayBtnIcon } from "./icons/PlayBtnIcon";
-import { PickupIcon } from "./icons/PickupIcon";
+import { ArrowIcon } from "./icons/ArrowIcon";
 import { CarIcon } from "./icons/CarIcon";
-import 'swiper/css';
-import 'swiper/css/pagination';
+import { ClearIcon } from "./icons/ClearIcon";
+import { DottedLine } from "./icons/DottedLine";
+import { DropIcon } from "./icons/DropIcon";
+import { FootIcon } from "./icons/FootIcon";
+import { InfoIcon } from "./icons/InfoIcon";
+import { PickupIcon } from "./icons/PickupIcon";
+import { PlayBtnIcon } from "./icons/PlayBtnIcon";
+import { SearchTrackIcon } from "./icons/SearchTrackIcon";
+import { TruckIcon } from "./icons/TruckIcon";
 
 export function MainContent() {
 
@@ -45,9 +45,6 @@ export function MainContent() {
                 break;
 
             default:
-                setLeftIsActive(false);
-                setMiddleIsActive(false);
-                setRightIsActive(false);
                 break;
         };
     }

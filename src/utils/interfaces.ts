@@ -1,4 +1,4 @@
-import { FC, SVGProps } from "react";
+import { ReactNode } from "react";
 
 export interface ButtonProps {
     text: string;
@@ -14,4 +14,7 @@ export interface NavPanelProps {
     className: string;
 }
 
-export type IconType = FC<SVGProps<SVGElement>>;
+export interface SearchFormProps {
+    icon: ReactNode;
+    className: string;
+}

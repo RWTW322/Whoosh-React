@@ -1,12 +1,12 @@
-import { CollaborateIcon } from './icons/CollaborateIcon';
-import { Alva } from './icons/Alva';
-import { Tendo } from './icons/Tendo';
-import { Fagor } from './icons/Fagor';
-import { RadioShack } from './icons/RadioShack';
-import { GuitarCenter } from './icons/GuitarCenter';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Alva } from './icons/Alva';
+import { CollaborateIcon } from './icons/CollaborateIcon';
+import { Fagor } from './icons/Fagor';
+import { GuitarCenter } from './icons/GuitarCenter';
+import { RadioShack } from './icons/RadioShack';
+import { Tendo } from './icons/Tendo';
 
 
 export function Partners() {
@@ -78,6 +78,25 @@ export function Partners() {
                         <GuitarCenter />
                     </SwiperSlide>
 
+                    <SwiperSlide className="swiper-partners__slide">
+                        <Alva />
+                    </SwiperSlide>
+
+                    <SwiperSlide className="swiper-partners__slide">
+                        <Tendo />
+                    </SwiperSlide>
+
+                    <SwiperSlide className="swiper-partners__slide">
+                        <Fagor />
+                    </SwiperSlide>
+
+                    <SwiperSlide className="swiper-partners__slide">
+                        <RadioShack />
+                    </SwiperSlide>
+
+                    <SwiperSlide className="swiper-partners__slide">
+                        <GuitarCenter />
+                    </SwiperSlide>
                 </Swiper>
             </div>
         </section>
