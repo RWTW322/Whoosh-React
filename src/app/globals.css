@@ -72,7 +72,7 @@ h4 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 80px;
+  height: 81px;
   padding: 8px 32px;
   color: #666666;
   background-color: #F8FAFF;
@@ -110,7 +110,7 @@ h4 {
   line-height: 24px;
 }
 
-.header__search-container {
+.header__search-form {
   display: flex;
   gap: 34px;
   width: 184px;
@@ -125,32 +125,32 @@ h4 {
   transform: translate(-50%, -50%);
 }
 
-.header__search-container:hover {
+.header__search-form:hover {
   background: #F1F5FF;
   border: 1px solid #C2D2F4;
 }
 
-.header__search-container:hover>.header__search-input {
+.header__search-form:hover>.search-form__input {
   background: #F1F5FF;
 }
 
-.header__search-container:active>.header__search-input {
+.header__search-form:active>.search-form__input {
   border: 1px solid #2B6BF3;
   background: #FFF;
   opacity: 1;
 }
 
-.header__search-container:active>.search-icon {
+.header__search-form:active>.search-icon {
   opacity: 1;
 }
 
-.header__search-container:active {
+.header__search-form:active {
   border: 1px solid #2B6BF3;
   background: #FFF;
   opacity: 1;
 }
 
-.header__search-input:active {
+.search-form__input:active {
   border: 1px solid #2B6BF3;
   background: #FFF;
   opacity: 1;
@@ -164,7 +164,7 @@ h4 {
   opacity: 1;
 }
 
-.header__search-input {
+.search-form__input {
   width: 106px;
   height: 15px;
   border: none;
@@ -175,11 +175,6 @@ h4 {
   font-weight: 400;
   line-height: 24px;
   opacity: 0.56;
-}
-
-.header__search-btn {
-  border: none;
-  background-color: transparent;
 }
 
 .header__nav {
@@ -223,7 +218,7 @@ h4 {
 /*Styles for MainContent component */
 
 .main-content {
-  height: 794px;
+  height: 784px;
   background-color: #F8FAFF;
   display: flex;
   flex-direction: column;
@@ -982,7 +977,7 @@ h4 {
 }
 
 .express-delivery__container {
-  min-width: 1160px;
+  max-width: 1160px;
 }
 
 .express-delivery__content {
@@ -1031,6 +1026,7 @@ h4 {
 .contacts__title {
   height: 16px;
   margin-bottom: 9px;
+  line-height: 16px;
 }
 
 .about__title,
@@ -1046,7 +1042,6 @@ h4 {
   letter-spacing: 1.12px;
   text-transform: uppercase;
 }
-
 
 .footer__about {
   margin-right: 60px;
@@ -1092,6 +1087,11 @@ h4 {
   list-style-type: none;
 }
 
+.nav__list-item {
+  display: flex;
+  align-items: flex-start;
+}
+
 .nav__list-item>a {
   text-decoration: none;
   color: #1D253C;
@@ -1101,6 +1101,7 @@ h4 {
   font-weight: 400;
   line-height: 32px;
   opacity: 0.64;
+  display: flex;
 }
 
 .menu__line,
@@ -1264,7 +1265,7 @@ h4 {
   }
 
   .header__city-container,
-  .header__search-container{
+  .header__search-form{
     display: none;
   }
 
@@ -1301,7 +1302,7 @@ h4 {
     border-bottom: 1px dashed #C2D2F4;
   }
   
-  .menu__search-container {
+  .menu__search-form {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1316,7 +1317,7 @@ h4 {
     margin-bottom: 44px;
   }
   
-  .menu__search-input {
+  .search-form__input {
     width: 140px;
     height: 15px;
     border: none;
@@ -1329,32 +1330,32 @@ h4 {
     opacity: 0.56;
   }
   
-  .menu__search-container:hover {
+  .menu__search-form:hover {
     background: #F1F5FF;
     border: 1px solid #C2D2F4;
   }
   
-  .menu__search-container:hover>.menu__search-input {
+  .menu__search-form:hover>.search-form__input {
     background: #F1F5FF;
   }
   
-  .menu__search-container:active>.menu__search-input {
+  .menu__search-form:active>.search-form__input {
     border: 1px solid #2B6BF3;
     background: #FFF;
     opacity: 1;
   }
   
-  .menu__search-container:active>.search-icon {
+  .menu__search-form:active>.search-icon {
     opacity: 1;
   }
   
-  .menu__search-container:active {
+  .menu__search-form:active {
     border: 1px solid #2B6BF3;
     background: #FFF;
     opacity: 1;
   }
   
-  .menu__search-input:active {
+  .search-form__input:active {
     border: 1px solid #2B6BF3;
     background: #FFF;
     opacity: 1;
@@ -1368,12 +1369,15 @@ h4 {
     width: 100%;
   }
   
-  .nav__link {
+  .nav__link-send,
+  .nav__link-courier,
+  .nav__link-affiliate-program {
     height: 24px;
+    margin-bottom: 24px;
   }
   
-  .nav__link:not(:last-child) {
-    margin-bottom: 24px;
+  .nav__link {
+    height: 24px;
   }
   
   .nav__link {
@@ -1392,6 +1396,7 @@ h4 {
     font-family: "Intro Regular";
     font-size: 18px;
     line-height: 32px;
+    bottom: 0;
   }
   
   .menu__menu-close-btn {

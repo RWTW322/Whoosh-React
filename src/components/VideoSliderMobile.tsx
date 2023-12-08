@@ -1,9 +1,8 @@
-import React, { EventHandler, useState } from "react";
-import { PlayBtnIcon } from "./icons/PlayBtnIcon";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from 'swiper/modules'
 import 'swiper/css';
 import 'swiper/css/pagination';
+import { Pagination } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { PlayBtnIcon } from "./icons/PlayBtnIcon";
 
 export function VideoSliderMobile() {
 

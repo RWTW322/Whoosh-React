@@ -17,11 +17,7 @@ export function HeaderSideOutMenu(props:{onClick:()=>void}) {
 
             <button className="menu__menu-close-btn button" type="button" onClick={props.onClick}><CloseIcon /></button>
 
-            <form className="menu__search-container">
-                <input className="menu__search-input" type="text" placeholder="Track a Package" />
-                <button className="menu__search-btn button" type="button"><SearchTrackIcon /></button>
-            </form>
-            <SearchForm icon={<SearchTrackIcon />}/>
+            <SearchForm icon={<SearchTrackIcon />} className="menu__search-form" />
             <HeaderNavPanel className="side-out-menu__nav"/>
 
             <Button className="complex-order-btn btn-component button" text="Take a comlpex order" backgroundColor="#2B6BF3" />

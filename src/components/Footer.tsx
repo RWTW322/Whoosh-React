@@ -1,13 +1,12 @@
-import React from "react";
+import { AboutIcon } from "./icons/AboutIcon";
+import { FacebookIcon } from "./icons/FacebookIcon";
+import { InstagramIcon } from "./icons/InstagramIcon";
+import { LocationIcon } from "./icons/LocationIcon";
+import { PrivacyIcon } from "./icons/PrivacyIcon";
 import { PyroByteIconBlue } from "./icons/PyroByteIconBlue";
 import { PyroByteIconRed } from "./icons/PyroByteIconRed";
-import { AboutIcon } from "./icons/AboutIcon";
-import { LocationIcon } from "./icons/LocationIcon";
-import { FacebookIcon } from "./icons/FacebookIcon";
 import { VkIcon } from "./icons/VkIcon";
 import { YoutubeIcon } from "./icons/YoutubeIcon";
-import { InstagramIcon } from "./icons/InstagramIcon";
-import { PrivacyIcon } from "./icons/PrivacyIcon";
 
 export function Footer() {
 

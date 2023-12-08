@@ -1,4 +1,3 @@
-import React from "react";
 import { BoxIcon } from "./icons/BoxIcon";
 import { Line } from "./icons/Line";
 

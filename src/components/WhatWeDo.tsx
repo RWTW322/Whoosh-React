@@ -1,9 +1,8 @@
-import React from "react";
 import { Button } from "./Button";
-import { CalculationIcon } from "./icons/CalculationIcon";
-import { PaperworkIcon } from "./icons/PaperworkIcon";
-import { ConvenientPaymentIcon } from "./icons/ConvenientPayIcon";
 import { ArrowCircleIcon } from "./icons/ArrowCircleIcon";
+import { CalculationIcon } from "./icons/CalculationIcon";
+import { ConvenientPaymentIcon } from "./icons/ConvenientPayIcon";
+import { PaperworkIcon } from "./icons/PaperworkIcon";
 
 export function WhatWeDo() {
 

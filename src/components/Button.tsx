@@ -1,4 +1,3 @@
-import React from "react";
 import { ButtonProps } from "@/utils/interfaces";
 
 export function Button({className, backgroundColor, text}:ButtonProps) {
