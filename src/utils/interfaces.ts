@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { DetailedHTMLProps, FormHTMLAttributes, ReactNode } from "react";
 
 export interface ButtonProps {
     text: string;
@@ -15,6 +15,6 @@ export interface NavPanelProps {
 }
 
 export interface SearchFormProps {
-    icon: ReactNode;
     className: string;
+    iconStyle: string;
 }
