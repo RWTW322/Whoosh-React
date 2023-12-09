@@ -12,7 +12,6 @@ import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
 
-
 function PrevSlideBtn() {
     const swiper = useSwiper();
     return (

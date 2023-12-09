@@ -29,7 +29,7 @@ export function Header() {
                 </div>
             </div>
 
-            <SearchForm icon={<SearchIcon />} className="header__search-form"/>
+            <SearchForm iconStyle="detailed" className="header__search-form"/>
             <HeaderNavPanel className="header__nav" />
 
             {isOpen ? (<HeaderSideOutMenu onClick={handleOpenMenu} />) : (<HeaderMenuBtn onClick={handleOpenMenu} />)

@@ -977,7 +977,9 @@ h4 {
 }
 
 .express-delivery__container {
-  max-width: 1160px;
+  min-width: 1160px;
+  position: relative;
+  margin: 0 auto;
 }
 
 .express-delivery__content {
